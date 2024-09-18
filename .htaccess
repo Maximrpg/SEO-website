@@ -1,9 +1,0 @@
-# Abilita il modulo di riscrittura
-RewriteEngine On
-
-# Se il file richiesto non esiste e non è una directory
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Riscrivi le URL per rimuovere l'estensione .html
-RewriteRule ^([^\.]+)$ $1.html [L]
