@@ -587,7 +587,18 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
-
+        
+        <!--================ HASH ERASRE ============-->
+        
+        <script>
+            function removehash(){
+                setTimeout(function(){
+                    history.replaceState("", document.title, window.location.pathname);
+                    }, 1);
+                }
+        </script>
+        
+        
         <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSV48KBBN8"></script>
 <script>
